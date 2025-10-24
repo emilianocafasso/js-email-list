@@ -1,4 +1,5 @@
 const emailList = document.getElementById('email-list')
+const button = document.getElementById('generate-btn')
 
 // funzione per generare 10 email casuali con API boolean
 function generateEmails() {
@@ -17,6 +18,5 @@ function generateEmails() {
     }
 }
 
-
-
 generateEmails();
+button.addEventListener("click", generateEmails)
