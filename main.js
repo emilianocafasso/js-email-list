@@ -3,6 +3,8 @@ const button = document.getElementById('generate-btn')
 
 // funzione per generare 10 email casuali con API boolean
 function generateEmails() {
+    emailList.innerHTML = ""
+
     for (let i = 0; i < 10; i++) {
         fetch('https://flynn.boolean.careers/exercises/api/random/mail')
             .then(response => response.json())
